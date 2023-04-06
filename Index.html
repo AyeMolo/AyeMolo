@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NONE</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title>Daily Logs Form</title>
 </head>
 <body>
-  <header>
-    <h1>Molo</h1>
-    <p>NONE</p>
-    <ul>
-      <li>Email: NONE</li>
-      <li>Phone: NONE</li>
-    </ul>
-  </header>
-  <main>
-    <section>
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <span class="job-title">NONENONE</span><br>
-          NONE<br>
-          NONE<br>
-          NONE:
-          <ul>
-            <li>NONE</li>
-            <li>NONE</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <span class="job-title">NONENONE</span><br>
-          NONE<br>
-          NONE<br>
-          NONE
-        </li>
-      </ul>
-    </section>
-  </main>
+  <h1>Daily Logs Form</h1>
+  <form id="daily-logs-form">
+    <label for="employee-name">Name:</label>
+    <input type="text" id="employee-name" name="employee_name"><br>
+    <label for="log-entry">Log Entry:</label>
+    <textarea id="log-entry" name="log_entry"></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+  
+  <script>
+    const form = document.getElementById('daily-logs-form');
+    form.addEventListener('submit', event => {
+      event.preventDefault(); // Prevent the form from submitting normally
+      
+      const employeeName = form.elements.employee_name.value;
+      const logEntry = form.elements.log_entry.value;
+      
+      const message = {
+        username: 'Daily Logs Bot',
+        content: `Employee ${employeeName} has submitted a new log entry:\n${logEntry}`
+      };
+      
+      const webhookUrl = 'hhttps://discord.com/api/webhooks/846512412621799434/T4y67tLerasBggVGjaUBPuSbQwfjJPj5Xoan97doAimOnQfGaFU8rfVvWds0yqlQDLxs';
+      
+      fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(message)
+      })
+      .then(response => {
+        if (response.ok) {
+          alert('Log entry submitted successfully!');
+          form.reset();
+        } else {
+          alert('Failed to submit log entry. Please try again later.');
+        }
+      })
+      .catch(error => {
+        alert('Failed to submit log entry. Please try again later.');
+      });
+    });
+  </script>
 </body>
 </html>

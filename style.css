@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+    
 }
 
 body {
@@ -12,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('https://cdn.discordapp.com/attachments/856564518809501726/1093982950967754882/IMG_4143.png') no-repeat;
+    background: url('https://cdn.discordapp.com/attachments/1088016584171339796/1094028285500997642/image.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -81,8 +82,10 @@ header {
     color: #162938;
 }
 
+
+
 .wrapper {
-    position: relative; 
+    position: absolute; 
     width: 400px;
     height: 440px;
     background: transparent;
@@ -96,7 +99,10 @@ header {
     overflow: hidden;
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
+    z-index: 100;
 }
+
+
 
 .wrapper.active-popup {
     transform: scale(1);
@@ -248,4 +254,250 @@ header {
     color: #162938;
     text-decoration: none;
 }
+
+
+
+
+
+.oneBox {
+    position: relative; 
+    left: -250px;
+    width: 400px;
+    height: 390px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: flex-start; /* Updated property value */
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.oneBox .aboutMe {
+    font-size: 1em;
+    color: #000000;
+    position: relative;
+    display:flex;
+    justify-content: flex-start;
+    bottom: 160px;
+    left: 115px;
+    white-space: nowrap;
+}
+  
+
+.oneBox .aboutMeP {
+    color: #000000;
+    position: relative;
+    display:flex;
+    justify-content: flex-start;
+    TOP: 0x;
+    RIGHT: 65px;
+}
+
+
+.twoBox .person1 {
+    position: relative; 
+    top: 180px;
+    left: -215px;
+    width: 400px;
+    height: 190px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: flex-start; /* Updated property value */
+    z-index: 1;
+    overflow: hidden;
+    
+    }
+
+.person1 img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.twoBox .person1 h1 {
+    font-size: 2em;
+    color: #000000;
+    position: relative;
+    display:flex;
+    justify-content: flex-start;
+    bottom: 1px;
+    left: 200px;
+    white-space: nowrap;
+}
+
+.twoBox .person1 .unser1 {
+    position: absolute;
+    right: 110px;
+    top: 50px;
+    transform: translateX(50%);
+}
+.twoBox .person2 {
+    position: relative; 
+    top: 190px;
+    left: -215px;
+    width: 400px;
+    height: 190px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: flex-start; /* Updated property value */
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.person2 img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.twoBox .person2 h1 {
+    font-size: 2em;
+    color: #000000;
+    position: relative;
+    display:flex;
+    justify-content: flex-start;
+    bottom: 1px;
+    left: 200px;
+    white-space: nowrap;
+}
+
+.twoBox .person2 .unser1 {
+    position: absolute;
+    right: 110px;
+    top: 50px;
+    transform: translateX(50%);
+}
+
+.twoBox .person3 {
+    position: relative; 
+    top: -200px;
+    left: 200px;
+    width: 400px;
+    height: 190px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: flex-start; /* Updated property value */
+    overflow: hidden;
+    z-index: 1;
+}
+
+.person3 img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.twoBox .person3 h1 {
+    font-size: 2em;
+    color: #000000;
+    position: relative;
+    display:flex;
+    justify-content: flex-start;
+    bottom: 1px;
+    left: 200px;
+    white-space: nowrap;
+}
+
+.twoBox .person3 .unser1 {
+    position: absolute;
+    right: 110px;
+    top: 50px;
+    transform: translateX(50%);
+
+}.twoBox .person4 {
+    position: relative; 
+    top: -190px;
+    left: 200px;
+    width: 400px;
+    height: 190px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: flex-start; /* Updated property value */
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.person4 img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.twoBox .person4 h1 {
+    font-size: 2em;
+    color: #000000;
+    position: relative;
+    display:flex;
+    justify-content: flex-start;
+    bottom: 1px;
+    left: 200px;
+    white-space: nowrap;
+}
+
+.twoBox .person4 .unser1 {
+    position: absolute;
+    right: 135px;
+    top: 50px;
+    transform: translateX(50%);
+}
+
+.threeBox {
+    position: relative; 
+    left: 250px;
+    width: 500px;
+    height: 700px;
+    bottom: 5px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: flex-start; /* Updated property value */
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.threeBox .aboutMe {
+    font-size: 1em;
+    color: #000000;
+    position: relative;
+    display:flex;
+    justify-content: flex-start;
+    bottom: 300px;
+    left: 160px;
+    white-space: nowrap;
+}
+  
 

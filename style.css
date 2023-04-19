@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+
+@media screen and (max-width: 1400px) {
+    .oneBox {
+        visibility: collapse;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('https://cdn.discordapp.com/attachments/1088016584171339796/1094028285500997642/image.png') no-repeat;
+    background: url('https://cdn.discordapp.com/attachments/1088016584171339796/1094418755146235984/gmqzAuGx.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -75,6 +82,7 @@ header {
     color: #fff;
     font-weight: 500;
     margin-left: 40px;
+    visibility: collapse; /* LOGIN THING HIDDEN JUST REMOVE THIS LINE*/ 
 }
 
 .navivation, .btnLogin-popup:hover {
@@ -100,6 +108,8 @@ header {
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
     z-index: 100;
+    visibility: collapse; /* LOGIN THING HIDDEN JUST REMOVE THIS LINE*/ 
+
 }
 
 
@@ -255,10 +265,6 @@ header {
     text-decoration: none;
 }
 
-
-
-
-
 .oneBox {
     position: relative; 
     left: -250px;
@@ -273,12 +279,13 @@ header {
     justify-content: flex-start; /* Updated property value */
     align-items: center;
     overflow: hidden;
+    visibility:visible;
     
 }
 
 .oneBox .aboutMe {
     font-size: 1em;
-    color: #000000;
+    color: #9bcee4;
     position: relative;
     display:flex;
     justify-content: flex-start;
@@ -289,7 +296,7 @@ header {
   
 
 .oneBox .aboutMeP {
-    color: #000000;
+    color: #9bcee4;
     position: relative;
     display:flex;
     justify-content: flex-start;
@@ -326,7 +333,7 @@ header {
 
 .twoBox .person1 h1 {
     font-size: 2em;
-    color: #000000;
+    color: #9bcee4;
     position: relative;
     display:flex;
     justify-content: flex-start;
@@ -336,6 +343,7 @@ header {
 }
 
 .twoBox .person1 .unser1 {
+    color: #9bcee4;
     position: absolute;
     right: 110px;
     top: 50px;
@@ -369,7 +377,7 @@ header {
 
 .twoBox .person2 h1 {
     font-size: 2em;
-    color: #000000;
+    color: #9bcee4;
     position: relative;
     display:flex;
     justify-content: flex-start;
@@ -379,6 +387,7 @@ header {
 }
 
 .twoBox .person2 .unser1 {
+    color: #9bcee4;
     position: absolute;
     right: 110px;
     top: 50px;
@@ -412,7 +421,7 @@ header {
 
 .twoBox .person3 h1 {
     font-size: 2em;
-    color: #000000;
+    color: #9bcee4;
     position: relative;
     display:flex;
     justify-content: flex-start;
@@ -422,6 +431,7 @@ header {
 }
 
 .twoBox .person3 .unser1 {
+    color: #9bcee4;
     position: absolute;
     right: 110px;
     top: 50px;
@@ -455,7 +465,7 @@ header {
 
 .twoBox .person4 h1 {
     font-size: 2em;
-    color: #000000;
+    color: #9bcee4;
     position: relative;
     display:flex;
     justify-content: flex-start;
@@ -465,6 +475,7 @@ header {
 }
 
 .twoBox .person4 .unser1 {
+    color: #9bcee4;
     position: absolute;
     right: 135px;
     top: 50px;
@@ -491,13 +502,23 @@ header {
 
 .threeBox .aboutMe {
     font-size: 1em;
-    color: #000000;
+    color: #9bcee4;
     position: relative;
     display:flex;
     justify-content: flex-start;
-    bottom: 300px;
+    bottom: 320px;
     left: 160px;
     white-space: nowrap;
 }
   
 
+.threeBox .aboutMeP {
+    font-size: .9em;
+    color: #9bcee4;
+    position: relative;
+    display:flex;
+    justify-content: flex-start;
+    bottom: 0;
+    left: -150px;
+    white-space: nowrap;
+}

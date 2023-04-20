@@ -50,11 +50,16 @@ header {
     align-items: center;
     z-index: 99;
 }
+
+
+
+
 .logo {
     font-size: 2em;
     color: #fff;
     user-select: none;
 }
+
 
 .navivation, a {
     visibility:visible;

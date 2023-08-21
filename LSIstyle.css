@@ -176,15 +176,25 @@ body {
   }
 
   .card1a {
+    position: fixed;
+    display: flex;
     width: 314px;
     height: auto;
     top: 50%;
     transform: translateY(-50%);
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-image: linear-gradient(163deg, #ffe3da 0%, #ffe3da 100%);
+    border-radius: 20px;
+    transition: all 0.3s;
   }
 
   .card12a {
     width: 314px;
-    height: auto;
+    height: 274.5px;
+    background-color: #ffe3da;
+    border-radius: 20px;
+    transition: all 0.2s;
   }
 }
 

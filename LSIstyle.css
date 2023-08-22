@@ -31,7 +31,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 10%;
-  position: relative;
 }
 
 .a2 {
@@ -176,7 +175,7 @@ body {
   }
 
   .card1a {
-    position: fixed;
+    position: absolute;
     display: flex;
     width: 314px;
     height: auto;

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Molo/static/css/main.7d2c54ec.css",
+    "main.js": "/Molo/static/js/main.9e40db5e.js",
+    "static/js/453.ad6eb26e.chunk.js": "/Molo/static/js/453.ad6eb26e.chunk.js",
+    "static/media/Tip Toe.mp3": "/Molo/static/media/Tip Toe.ccd24c4c8fc92ad72554.mp3",
+    "static/media/二十歳の恋.mp3": "/Molo/static/media/二十歳の恋.7f3c0d5c978ad56a52e6.mp3",
+    "static/media/In This Darkness.mp3": "/Molo/static/media/In This Darkness.85ce14f793c872f64956.mp3",
+    "static/media/Let-U-Go.mp3": "/Molo/static/media/Let-U-Go.743df78b608baef41608.mp3",
+    "static/media/hi.gif": "/Molo/static/media/hi.dd4bbc390e4c8e46dcf4.gif",
+    "static/media/click.mp3": "/Molo/static/media/click.fb8d8c6380e9cddb60bf.mp3",
+    "index.html": "/Molo/index.html",
+    "main.7d2c54ec.css.map": "/Molo/static/css/main.7d2c54ec.css.map",
+    "main.9e40db5e.js.map": "/Molo/static/js/main.9e40db5e.js.map",
+    "453.ad6eb26e.chunk.js.map": "/Molo/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d2c54ec.css",
+    "static/js/main.9e40db5e.js"
+  ]
+}
